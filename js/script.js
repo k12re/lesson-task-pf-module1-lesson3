@@ -2,13 +2,15 @@
 var firstNumber = 34;
 var secondNumber = 89;
 
-if (firstNumber <= secondNumber) console.log("The first number is smaller than the second");
+if (firstNumber <= secondNumber) {
+  console.log("The first number is smaller than the second");
+}
 
 //Question 2
 var age = 11;
-var minimumAge = 13;
+var minimumAge = "13";
 
-if (age <= minimumAge) {
+if (age <= parseInt(minimumAge)) {
   console.log("Minimum age not passed");
 } else {
   console.log("Minimum age passed");
@@ -18,7 +20,7 @@ if (age <= minimumAge) {
 var income = "11.050";
 var maximumIncome = "13.075";
 
-if (income <= maximumIncome) {
+if (income <= parseFloat(maximumIncome)) {
   console.log("Maximum income not exceeded");
 } else {
   console.log("Maximum income exceeded");
@@ -42,7 +44,7 @@ if (invoicePaid === false) {
 var selectedNumber = 11;
 var winningNumber = "15";
 
-if (selectedNumber !== winningNumber) {
+if (selectedNumber !== parseInt(winningNumber)) {
   console.log("You lose again");
 }
 
